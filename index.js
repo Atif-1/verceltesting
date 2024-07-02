@@ -3,7 +3,7 @@ const app=express();
 
 app.use(express.json());
 app.use('/',(req,res)=>{
-	res.json({"message":"hello"});
+	res.sendFile("./index.html");
 });
 
 app.listen(3000);
